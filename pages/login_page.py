@@ -17,5 +17,5 @@ class LoginPage(BasePage):
         self.type(self.PASSWORD, password)
         self.click(self.LOGIN_BTN)
 
-    def get_error_message(self, error):
-        return self.type(self.ERROR, error)
+    def get_error_message(self):
+        return self.get_text(self.ERROR)

@@ -17,8 +17,8 @@ def pytest_runtest_makereport(item):
 
     if report.when == "call" and report.failed:
 
-        driver = item.funcargs["driver"]
-
-        driver.save_screenshot(
-            f"reports/screenshots/{item.name}.png"
-        )
+        driver = item.funcargs.get("driver")
+        if driver:
+            driver.save_screenshot(
+                f"reports/screenshots/{item.name}.png"
+    )

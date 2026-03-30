@@ -13,6 +13,9 @@ class BasePage:
     def click(self, locator):
         self.wait.until(EC.element_to_be_clickable(locator)).click()
 
+    def get_text(self, locator):
+        return self.find(locator).text
+
     def type(self, locator, text):
         element = self.find(locator)
         element.clear()
