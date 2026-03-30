@@ -5,9 +5,9 @@ __pycache__/
 
 .env
 
-reports/
 allure-results/
 allure-report/
+reports/
 
 .venv/
 venv/
