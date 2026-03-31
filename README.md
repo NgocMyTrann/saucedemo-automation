@@ -1,7 +1,8 @@
 # SauceDemo Automation Project
 
 ## 📌 Overview
-This project is a test automation framework built for the SauceDemo website.
+SauceDemo Automation Framework
+This project is a test automation framework built using Selenium, Python, and Pytest for testing an e-commerce web application.
 
 ## 🛠 Tech Stack
 - Python
@@ -9,19 +10,43 @@ This project is a test automation framework built for the SauceDemo website.
 - Pytest
 - Page Object Model (POM)
 - Allure Report
+- Git & GitHub
 
 ## 📂 Project Structure
-- tests/ → test cases
-- pages/ → page objects
-- testdata/ → test data
-- utils/ → driver setup & config
-
-## ✅ Test Scenarios
-- Login
-- Add product to cart
-- Checkout flow
+tests/ → Test cases  
+pages/ → Page Object classes  
+utils/ → Driver setup & config  
+testdata/ → Test data  
+reports/ → Screenshots  
+conftest.py → Pytest fixtures  
 
 ## 🚀 How to run
+git clone https://github.com/NgocMyTrann/saucedemo-automation.git
+cd saucedemo-automation
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+pytest --alluredir=allure-results
+allure serve allure-results
+
+## ✨ Features
+- Page Object Model (POM)
+- Data-driven testing (pytest parametrize)
+- End-to-end test flow (login → cart → checkout)
+- Screenshot on test failure
+- Allure reporting integration
+
+## ✅ Test Coverage
+- Login validation (valid & invalid cases)
+- Add product to cart
+- Checkout process
+
+## 📊 Test Report
+
+![Allure Report](link_image)
 
 ### 1. Clone project
 git clone https://github.com/NgocMyTrann/saucedemo-automation.git
