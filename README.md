@@ -46,7 +46,7 @@ allure serve allure-results
 
 ## 📊 Test Report
 
-![Allure Report](link_image)
+![Allure Report](https://github.com/NgocMyTrann/saucedemo-automation/blob/main/reports/Screenshot%202026-03-31%20at%2016.36.15.png)
 
 ### 1. Clone project
 git clone https://github.com/NgocMyTrann/saucedemo-automation.git
